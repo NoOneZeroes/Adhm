@@ -135,6 +135,7 @@ toop.addEventListener("click", function top() {
 
 let bar = document.querySelector("header .bar")
 let linksOfMobile = document.querySelector("header ul")
+let linksOfMobileAaA =document.querySelectorAll("header ul li a")
 let sts = document.querySelector(".stx")
 let lasts = document.querySelector(".lastx")
 let mids = document.querySelector(".ndx")
@@ -143,6 +144,7 @@ console.log(mids)
 
 bar.onclick = function () {
   linksOfMobile.classList.toggle("spec")
+  linksOfMobileAaA.style.csstext="pointer-events: visible ;"
   sts.classList.toggle("xs")
   lasts.classList.toggle("xtl")
   mids.classList.toggle("xnd")

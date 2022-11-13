@@ -343,7 +343,7 @@ a {
     padding: 7px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: absolute;
     background-color: #000;
     top: 100%;
@@ -362,13 +362,36 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 60px;
+    pointer-events: visible;
+  }
+
+  .landing header ul li a {
+    pointer-events: none;
   }
 
   .landing header .spec {
-    height: 240px;
-    opacity: 1;
+    height: 240px !important;
+    opacity: 1 !important;
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #000;
+    top: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .event {
+    pointer-events: visible !important;
   }
 }
+
 
 .landing header ul li a {
   color: white;
@@ -700,8 +723,8 @@ footer .foot p span {
   height: 60px;
   background-color: #333;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 80px;
+  right: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -728,12 +751,12 @@ footer .foot p span {
 
 @media (max-width:768px) {
   .top {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-color: #333;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 30px;
+    right: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
