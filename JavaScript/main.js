@@ -144,7 +144,6 @@ console.log(mids)
 
 bar.onclick = function () {
   linksOfMobile.classList.toggle("spec")
-  linksOfMobileAaA.style.csstext="pointer-events: visible ;"
   sts.classList.toggle("xs")
   lasts.classList.toggle("xtl")
   mids.classList.toggle("xnd")
