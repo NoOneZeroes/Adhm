@@ -706,13 +706,6 @@ footer .foot p span {
   color: var(--main-color);
 }
 
-.opacity {
-  opacity: 1 !important;
-}
-
-.o {
-  opacity: 0;
-}
 
 .top {
   width: 60px;
@@ -726,8 +719,9 @@ footer .foot p span {
   justify-content: center;
   z-index: 54666666666664623;
   border-radius: 6px;
-  cursor: pointer;
+  cursor: none;
   transition: 0.3s;
+  pointer-events: none;
   opacity: 0;
 }
 
@@ -768,3 +762,12 @@ footer .foot p span {
 }
 
 /* End footer */
+.opacity {
+  opacity: 1 !important;
+  cursor: pointer !important;
+  pointer-events: visible !important;
+}
+
+.o {
+  opacity: 0;
+}
